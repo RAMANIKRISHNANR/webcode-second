@@ -24,7 +24,7 @@ const HomeScreen = () => {
         ) : error ? (
           <Error error="Something Went Wrong" />
         ) : (
-          pizzas.map((pizza) => (
+          pizzas?.map((pizza) => (
             <div className="col-md-4 p-3" key={pizza._Id}>
               <div>
                 <Pizza pizza={pizza} />
